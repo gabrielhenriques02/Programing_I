@@ -4,11 +4,10 @@
 int main() {
 
     int year = 0;
-    
-    do {
-        printf("type the year: ");
-        scanf("%d", &year);
-    } while (year == 0);
+
+    printf("type the year: ");
+    scanf("%d", &year);
+    printf("\n");
 
     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
         printf("%d is a LEAP YEAR.\n", year);

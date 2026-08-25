@@ -3,15 +3,17 @@
 
 int main() {
 
-    int year;
-
-    printf("type the year: ");
-    scanf("%i", &year);
+    int year = 0;
+    
+    do {
+        printf("type the year: ");
+        scanf("%d", &year);
+    } while (year == 0);
 
     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-        printf("%i is a LEAP YEAR.\n", year);
+        printf("%d is a LEAP YEAR.\n", year);
     }
     else {
-        printf("%i is not a LEAP YEAR.\n", year);
+        printf("%d is not a LEAP YEAR.\n", year);
     }
 }

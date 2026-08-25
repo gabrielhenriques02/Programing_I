@@ -1,0 +1,39 @@
+# Configurações locais de IDE / VS Code
+.vscode/
+
+# Executáveis gerados sem extensão no Linux (ex: prog_1, prog_2...)
+prog_*
+!prog_*.c
+!prog_*.h
+
+# Executáveis padrão
+*.exe
+*.out
+*.app
+*.hex
+
+# Arquivos de Objeto e Linker
+*.o
+*.obj
+*.elf
+*.d
+*.ilk
+*.map
+*.exp
+
+# Bibliotecas e Binários Compartilhados
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.dylib
+
+# Arquivos temporários e de Debug
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.gch
+*.pch
